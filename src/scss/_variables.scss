@@ -1,1 +1,39 @@
-$wtf: #2D2241;
+$wtf: #2d2241;
+
+@mixin yellowBlock {
+  display: block;
+  content: "";
+  background-color: yellow;
+  width: 6px;
+  height: 16px;
+  margin-right: 2px;
+}
+@mixin title_features {
+  color: #ffff;
+  font-family: "Fredoka One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.12em;
+  margin-bottom: 16px;
+}
+@mixin description_features {
+  color: #ffff;
+  font-family: "Fredoka One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  letter-spacing: 0.12em;
+  margin: 8px 16px;
+  text-align: center;
+}
+@mixin horizontal_block {
+  display: block;
+  background-color: yellow;
+  content: "";
+  width: 14px;
+  height: 6px;
+  margin-right: 2px;
+}

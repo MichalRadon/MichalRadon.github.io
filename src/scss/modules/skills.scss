@@ -1,0 +1,28 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+
+  &__title {
+    @include title_features;
+  }
+  &__title::after {
+    @include horizontal_block;
+  }
+
+  &__title__h3 {
+    @include description_features;
+    font-size: 14px;
+    text-align: left;
+  }
+  &__title__list {
+    & > li {
+      @include description_features;
+      font-size: 12px;
+      list-style: square;
+      text-align: left;
+    }
+  }
+}

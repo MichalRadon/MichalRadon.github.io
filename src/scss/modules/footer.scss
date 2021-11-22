@@ -1,0 +1,38 @@
+.footer {
+  margin-top: 20px;
+}
+.mail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    @include title_features;
+    color: yellow;
+    font-size: 9px;
+    margin: 0;
+  }
+  &__link {
+    @include title_features;
+    color: white;
+    font-size: 9px;
+  }
+}
+.github {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    @include title_features;
+    color: yellow;
+    font-size: 9px;
+    margin: 0;
+  }
+  &__link {
+    @include title_features;
+    color: white;
+    font-size: 9px;
+  }
+}

@@ -1,0 +1,17 @@
+.menu {
+  &__list__item {
+    display: flex;
+    color: white;
+    background-color: black;
+    margin: 10px auto;
+    font-family: "Fredoka One";
+    border: 0;
+  }
+  &__list__item:hover::before,
+  :focus::before {
+    @include yellowBlock;
+  }
+  &__list__item:focus::before {
+    @include yellowBlock;
+  }
+}

@@ -1,0 +1,17 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+
+  &__title {
+    @include title_features;
+  }
+  &__title::after {
+    @include horizontal_block;
+  }
+  &__description {
+    @include description_features;
+  }
+}

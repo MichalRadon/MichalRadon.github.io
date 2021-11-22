@@ -1,8 +1,34 @@
 @import "~normalize.css";
 
-@import "_variables";
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kaushan+Script&display=swap');
 
+@import "_variables";
+@import "modules/nav.scss";
+@import "modules/about.scss";
+@import "modules/skills.scss";
+@import "modules/projects.scss";
+@import "modules/footer.scss";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr, 1fr, 1fr;
+  background-color: black;
 
+}
+.name__title {
+  text-align: center;
+  color: yellow;
+  font-family: 'Kaushan Script';
 }
