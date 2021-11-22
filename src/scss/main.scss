@@ -1,7 +1,7 @@
 @import "~normalize.css";
 
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kaushan+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kaushan+Script&display=swap");
 
 @import "_variables";
 @import "modules/nav.scss";
@@ -11,6 +11,7 @@
 @import "modules/footer.scss";
 
 html {
+  height: 100%;
   box-sizing: border-box;
 }
 
@@ -21,14 +22,34 @@ html {
 }
 
 body {
+  height: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr, 1fr, 1fr;
+  grid-template-rows: 150px 200px 1fr 150px;
   background-color: black;
-
+  @media (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 1fr 150px;
+  }
 }
 .name__title {
   text-align: center;
   color: yellow;
-  font-family: 'Kaushan Script';
+  font-family: "Kaushan Script";
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    text-align: left;
+    margin-left: 50px;
+  }
+}
+.hide_section {
+  display: none;
+}
+.main {
+  @media (min-width: $tablet) {
+    grid-column: 2;
+    grid-row: 2;
+  }
 }

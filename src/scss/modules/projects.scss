@@ -5,9 +5,12 @@
   align-items: center;
   margin-top: 50px;
 
+  @media (min-width: $tablet) {
+    margin: 50px;
+  }
+
   &__title {
     @include title_features;
-    margin: 0;
   }
   &__title::after {
     @include horizontal_block;
