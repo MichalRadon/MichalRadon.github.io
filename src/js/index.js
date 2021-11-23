@@ -1,5 +1,8 @@
 import "../scss/main.scss";
+import * as kk from "../js/projectsSection"
 console.log("HELLO 🚀");
+
+
 
 const buttonAbout = document.querySelector(".menu__list__item__about--js");
 const buttonSkill = document.querySelector(".menu__list__item__skills--js");

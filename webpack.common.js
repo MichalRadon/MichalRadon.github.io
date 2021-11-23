@@ -5,6 +5,7 @@ module.exports = {
   /* here you can define another js file */
   entry: {
     index: "./src/js/index.js",
+    projectsSection: "./src/js/projectsSection",
     
   },
   output: {
