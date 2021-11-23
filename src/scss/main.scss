@@ -8,6 +8,7 @@
 @import "modules/about.scss";
 @import "modules/skills.scss";
 @import "modules/projects.scss";
+@import "modules/contact.scss";
 @import "modules/footer.scss";
 
 html {
@@ -37,17 +38,21 @@ body {
 .name__title {
   text-align: center;
   color: yellow;
+
   font-family: "Kaushan Script";
   @media (min-width: $tablet) {
     font-size: 60px;
     text-align: left;
-    margin-left: 50px;
+    padding-left: 50px;
   }
 }
 .hide_section {
   display: none;
 }
 .main {
+  position: relative;
+  // padding-left: 190px;
+
   @media (min-width: $tablet) {
     grid-column: 2;
     grid-row: 2;

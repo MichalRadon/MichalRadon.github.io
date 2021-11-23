@@ -3,10 +3,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  padding-top: 50px;
 
   @media (min-width: $tablet) {
-    margin: 50px;
+    padding: 50px;
   }
 
   &__title {
@@ -15,7 +15,11 @@
   &__title::after {
     @include horizontal_block;
   }
+  &__div {
+    padding: 16px;
+  }
 }
+
 .article {
   display: flex;
   flex-direction: column;
@@ -24,7 +28,7 @@
   border-bottom: yellow;
   border-width: 2px;
   border-style: solid;
-  margin: 16px;
+  padding: 16px;
 
   &__title {
     @include title_features;
@@ -35,7 +39,7 @@
     @include title_features;
     color: white;
     font-size: 12px;
-    margin: 8px 16px;
+    padding: 8px 16px;
     text-align: center;
   }
   &__footer {

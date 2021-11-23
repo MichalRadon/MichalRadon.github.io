@@ -3,10 +3,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  padding-top: 50px;
 
   @media (min-width: $tablet) {
-    margin: 50px;
+    padding: 50px;
   }
 
   &__title {

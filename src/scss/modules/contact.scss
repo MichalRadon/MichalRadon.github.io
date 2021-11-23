@@ -1,0 +1,66 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+
+  @media (min-width: $tablet) {
+    padding: 50px;
+  }
+
+  &__title {
+    @include title_features;
+  }
+  &__title::after {
+    @include horizontal_block;
+  }
+  &__div {
+    @media (min-width: $tablet) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__mail {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @media (min-width: $tablet) {
+        padding: 50px;
+      }
+      &__title {
+        @include title_features;
+        color: yellow;
+        font-size: 9px;
+        margin: 0;
+      }
+      &__link {
+        @include title_features;
+        color: white;
+        font-size: 9px;
+      }
+    }
+    &__github {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @media (min-width: $tablet) {
+        padding: 50px;
+      }
+      &__title {
+        @include title_features;
+        color: yellow;
+        font-size: 9px;
+        margin: 0;
+      }
+      &__link {
+        @include title_features;
+        color: white;
+        font-size: 9px;
+      }
+    }
+  }
+}

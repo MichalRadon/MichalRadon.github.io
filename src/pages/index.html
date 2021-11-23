@@ -10,10 +10,10 @@
   <meta property="og:title" content="Michał Radoń Portfolio" />
   <!-- OPTIONAL description. 2-4 sentences. -->
   <meta property="og:description" content="My portfolio" />
-  <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+  <!-- full url with http(s) ie.  -->
   <meta property="og:url" content="https://michalradon.github.io" />
-  <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-  <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+  <!-- full url to the image with http(s) ie.  Facebook suggests at least 1200 x 630. -->
+
 </head>
 
 <body>
@@ -78,6 +78,7 @@
     </section>
     <section class="projects projects--js">
       <h2 class="projects__title">Projects</h2>
+      <div class="projects__div projects__div--js">
       <article class="article">
         <h3 class="article__title">Portfolio</h3>
         <p class="article__description">
@@ -97,9 +98,21 @@
           </div>
         </footer>
       </article>
-
+    </div>
     </section>
-    <section class="contact"></section>
+    <section class="contact contact--js">
+      <h2 class="contact__title">Contact</h2>
+      <div class="contact__div">
+        <section class="contact__div__mail">
+          <h2 class="contact__div__mail__title">EMAIL</h2>
+          <a class="contact__div__mail__link" href="mailto:michalradon.mr@gmail.com">michalradon.mr@gmail.com</a>
+        </section>
+        <section class="contact__div__github">
+          <h2 class="contact__div__github__title">GITHUB</h2>
+          <a class="contact__div__github__link" href="https://github.com/MichalRadon">github.com/MichalRadon</a>
+        </section>
+      </div>
+    </section>
   </main>
   <footer id="contact" class="footer">
     <section class="mail">
@@ -112,7 +125,7 @@
       <a class="github__link" href="https://github.com/MichalRadon">github.com/MichalRadon</a>
     </section>
   </footer>
-  <!-- <script src="main.js"></script> -->
+
 </body>
 
 </html>

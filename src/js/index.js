@@ -9,8 +9,13 @@ const buttonContact = document.querySelector(".menu__list__item__contact--js");
 const aboutSection = document.querySelector(".about--js");
 const skillsSection = document.querySelector(".skills--js");
 const projectsSection = document.querySelector(".projects--js");
-//const contactSection = document.querySelector(".projects--js");
-const sectionArray = [aboutSection, skillsSection, projectsSection];
+const contactSection = document.querySelector(".contact--js");
+const sectionArray = [
+  aboutSection,
+  skillsSection,
+  projectsSection,
+  contactSection,
+];
 
 for (let section of sectionArray) {
   section.classList.add("hide_section");
@@ -27,6 +32,9 @@ buttonSkill.addEventListener("click", () => {
 buttonProject.addEventListener("click", () => {
   switchSection(2);
 });
+buttonContact.addEventListener("click", () => {
+  switchSection(3);
+});
 
 function switchSection(i) {
   for (let section of sectionArray) {
@@ -42,6 +50,7 @@ function switchSection(i) {
   if (i === 2) {
     sectionArray[i].classList.remove("hide_section");
   }
-
-  console.log("funkcja");
+  if (i === 3) {
+    sectionArray[i].classList.remove("hide_section");
+  }
 }
