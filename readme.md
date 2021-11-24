@@ -1,4 +1,4 @@
-![cover](https://github.com/MichalRadon/MichalRadon.github.io/og-mr.png)
+![cover](https://github.com/MichalRadon/MichalRadon.github.io/blob/source/public/img/og-mr.png)
 
 # Michał Radoń 
 

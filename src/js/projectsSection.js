@@ -3,6 +3,7 @@ const fetchApi = fetch(
 )
   .then((resp) => resp.json())
   .then((resp) => {
+    console.log(resp);
     const project = document.querySelector(".projects__div--js");
     for (let element of resp) {
       const { description, homepage, html_url, name } = element;
@@ -25,10 +26,28 @@ const fetchApi = fetch(
         </div>
       </footer>
     </article>`;
-      if (description) {
+
+      const noHomepage = `      <article class="article">
+    <h3 class="article__title">${name}</h3>
+    <p class="article__description">
+      ${description}
+    </p>
+    <footer class="article__footer">
+      <div class="article__footer__github">
+        <a rel="noopener noreferrer" target="_blank" href="${html_url}"><img class="article__footer__github__img"
+            src="img/GitHub_Mark_White.png" alt=""></a>
+        <a rel="noopener noreferrer" target="_blank" class="article__footer__github__link" href="${html_url}">GitHub</a>
+      </div>
+    </footer>
+  </article>`;
+
+      if (description && homepage) {
         project.innerHTML += template;
       }
-      project.innerHTML += template;
+
+      if (description && !homepage) {
+        project.innerHTML += noHomepage;
+      }
     }
   })
   .catch((e) => console.log(e));
